@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши услуги - Моя фирма</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Внедренная таблица стилей для списка (дублирование на случай, если внешний CSS не подгрузится, но основной стиль в style.css) -->
+    <style>
+        /* Дополнительная гарантия, что список будет именно таким */
+        .services-list {
+            list-style-type: decimal;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Заголовок с именем учащегося (замените "Иван Иванов" на свои данные) -->
+    <div class="firm-name">
+        <h5>Перечень услуг/товаров. Учащийся: Иван Иванов</h5>
+    </div>
+
+    <!-- Логотип фирмы -->
+    <div class="logo">
+        <img src="images/logo.jfif" alt="Логотип фирмы" width="150">
+    </div>
+
+    <!-- Перечень (нумерованный список) -->
+    <p class="content-text">Мы предлагаем следующие услуги:</p>
+    <ul class="services-list"> <!-- Используем ul, но стиль сделает его нумерованным -->
+        <li>Аудит IT-инфраструктуры</li>
+        <li>Монтаж локальных сетей</li>
+        <li>Продажа лицензионного ПО</li>
+        <li>Обслуживание серверов</li>
+        <li>Разработка сайтов</li>
+        <li>Видеонаблюдение "под ключ"</li>
+    </ul>
+
+    <!-- HTML-ссылки на две другие страницы -->
+    <div class="navigation">
+        <a href="index.html">Главная страница</a>
+        <a href="price.html">Наш прайс-лист</a>
+    </div>
+
+</body>
+</html>

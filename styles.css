@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif; /* Рекомендуемый шрифт для читаемости */
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Нейтральный фон */
+}
+
+/* Название фирмы - заголовок пятого уровня, по центру, желтый */
+.firm-name h5 {
+    text-align: center;
+    color: yellow;
+    background-color: #333; /* Добавим фон, чтобы желтый был виден */
+    padding: 10px;
+    margin-top: 0;
+    /* Заголовок h5 и так имеет свой размер, оставляем его */
+}
+
+/* Логотип */
+.logo {
+    text-align: center; /* Выравниваем лого по центру */
+    margin: 15px 0;
+}
+
+/* Общие стили для параграфов и другого текста */
+p, .address, .appeal, .content-text {
+    text-align: justify; /* Выравнивание по ширине */
+    color: purple; /* Фиолетовый цвет */
+    font-weight: bold; /* Полужирное начертание */
+    font-size: 2em; /* Размер шрифта на 2 единицы больше текущего (в 2 раза больше базового) */
+    line-height: 1; /* Немного увеличиваем межстрочный интервал для удобства */
+}
+
+/* Для ссылок делаем шрифт поменьше, так как 2em для них слишком много */
+a {
+    font-size: 0.7em; /* Возвращаем ссылки к читаемому размеру */
+    font-weight: bold;
+    color: #0066cc;
+    margin-right: 15px;
+}
+
+/* Стили для таблицы (прайс-лист на второй странице) */
+.price-table {
+    width: auto; /* Автоширина, чтобы не растягивать */
+    margin-left: auto; /* Эти два свойства */
+    margin-right: 0;  /* выравнивают таблицу по правому краю */
+    border-collapse: separate; /* Важно для свойства border-spacing */
+    border-spacing: 3px; /* Расстояние между границами ячеек = 3 */
+    border: 3px solid black; /* Ширина рамки всей таблицы 3 пикселя */
+}
+
+.price-table th {
+    background-color: aquamarine; /* Цвет заголовков - аквамарин */
+    padding: 8px;
+    border: 1px solid #7f7070; /* Внутренняя граница ячеек */
+}
+
+.price-table td {
+    padding: 8px;
+    border: 1px solid #666; /* Внутренняя граница ячеек */
+    background-color: white; /* Белый фон для ячеек */
+}
+
+/* Стили для нумерованного списка (третья страница) */
+/* Используем внедренную таблицу стилей через класс, так как стиль должен применяться к конкретному списку */
+.services-list {
+    list-style-type: decimal; /* Нумерация арабскими цифрами */
+    font-weight: bold;
+    color: purple;
+    font-size: 1.5em; /* Чуть меньше, чем основной текст, чтобы не было огромным */
+    padding-left: 40px;
+}
+
+.services-list li {
+    margin-bottom: 8px;
+}
+
+/* Общий контейнер для навигации */
+.navigation {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 2px dashed #ccc;
+}
